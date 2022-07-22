@@ -3,7 +3,7 @@ import com.sap.gateway.ip.core.customdev.util.Message;
 def Message processData(Message message) {
 
   //get property
-  def fnImportQueryString = oMessage.getProperty("fnImportQueryString");
+  def fnImportQueryString = message.getProperty("fnImportQueryString");
 
   //log property
   def messageLog = messageLogFactory.getMessageLog(message);
